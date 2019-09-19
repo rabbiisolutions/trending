@@ -6,7 +6,7 @@ import React from "react";
 
 const TrendingView = () => {
   return (
-      <div>
+      <div className="trending">
         <TrendingVideo/>
         <TrendingCard/>
         <BlogsCard/>
