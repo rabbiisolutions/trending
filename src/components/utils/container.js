@@ -5,9 +5,7 @@ const Container = (props) => {
       <section className="card">
         <div className="header">
           <span className="">{props.title}</span>
-          <span>
           {props.icons}
-        </span>
         </div>
         <div className="body">
           {props.body}
