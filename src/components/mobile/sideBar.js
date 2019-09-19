@@ -55,7 +55,7 @@ class SideBar extends React.Component {
                   {texts.ourServices[0]}
                 </a>
               </div>
-              <a className="menu-item" href="#" onClick={e => this.menuHandler(e)}>
+              <a className="menu-item" href="https://about.rabbii.co.ke/">
                 {texts.menuItems[2]}
               </a>
               <a className="menu-item" href="https://faqs.rabbii.co.ke/">
@@ -64,7 +64,7 @@ class SideBar extends React.Component {
               <a className="menu-item" href="#contacts" onClick={e => this.menuHandler(e)}>
                 {texts.menuItems[4]}
               </a>
-              <a className="menu-item" href="https://www.rabbii.co.ke/#trending">
+              <a className="menu-item active" href="#trending" onClick={e => this.menuHandler(e)}>
                 {texts.menuItems[5]}
               </a>
             </div>

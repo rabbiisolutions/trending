@@ -44,7 +44,7 @@ class NavBar extends React.Component {
             <span className="nav-item" onClick={e => this.servicesToggle(e)}>
               {texts.menuItems[1]}
             </span>
-            <a className="nav-item active" href="#" onClick={e => this.menuHandler(e)}>
+            <a className="nav-item" href="https://about.rabbii.co.ke/">
               {texts.menuItems[2]}
             </a>
             <a className="nav-item" href="https://faqs.rabbii.co.ke/">
@@ -53,7 +53,7 @@ class NavBar extends React.Component {
             <a className="nav-item" href="#contacts" onClick={e => this.menuHandler(e)}>
               {texts.menuItems[4]}
             </a>
-            <a className="nav-item" href="https://www.rabbii.co.ke/#trending">
+            <a className="nav-item active" href="#" onClick={e => this.menuHandler(e)}>
               {texts.menuItems[5]}
             </a>
         </span>
