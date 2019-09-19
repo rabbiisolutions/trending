@@ -14,6 +14,7 @@ import physicsWebp from "../../images/webp/physics.webp"
 import videoJpeg from "../../images/jpeg/video.jpg"
 import videoWebp from "../../images/webp/video.webp"
 import webpIsSupported from "../../helpers/webp";
+import MoreButton from "./MoreButton";
 
 
 const TrendingCard = () => {
@@ -29,6 +30,7 @@ const TrendingCard = () => {
       <Card title="· 7+ Maths Facts" src={webpIsSupported() ? mathsWebp : mathsJpeg}/>
       <Card title="· 7+ Physics Facts" src={webpIsSupported() ? physicsWebp : physicsJpeg}/>
       <Card title="· Pun Video II" src={webpIsSupported() ? videoWebp : videoJpeg}/>
+      <MoreButton/>
     </div>
   );
 
