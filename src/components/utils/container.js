@@ -2,7 +2,7 @@ import React from "react";
 
 const Container = (props) => {
   return (
-      <div className="card">
+      <section className="card">
         <div className="header">
           <span className="">{props.title}</span>
           <span>
@@ -12,7 +12,7 @@ const Container = (props) => {
         <div className="body">
           {props.body}
         </div>
-      </div>
+      </section>
   );
 };
 
