@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import TrendingView from "./components/TrendingView";
+import backDropHandler from "./events/backDrop";
+import SideBar from "./components/mobile/sideBar";
+import NavBar from "./components/mobile/navBar";
+import MobileFooter from "./components/mobile/footer";
+import SignUpModal from "./components/signUpModal";
+import texts from "./constants/texts";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <NavBar/>
+        <TrendingView/>
+        <SideBar/>
+        <SignUpModal/>
+        <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
+        <div className="our-services hidden">
+          <a className="nav-sub-item" href="https://www.rabbii.co.ke/#teecha">
+            {texts.ourServices[0]}
+          </a>
+        </div>
+        <MobileFooter/>
+      </Router>
   );
 }
 
