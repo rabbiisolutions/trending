@@ -3,7 +3,7 @@ import React from "react";
 const ButtonLink = (props) => {
   return (
       <a href={props.link} role="button" className={"btn-link " + props.className}>
-        {props.icon}{props.value}
+        {props.icon}<span>{props.value}</span>
       </a>
   );
 };

@@ -30,7 +30,7 @@ const TrendingCard = () => {
       <Card title="· 7+ Maths Facts" src={webpIsSupported() ? mathsWebp : mathsJpeg}/>
       <Card title="· 7+ Physics Facts" src={webpIsSupported() ? physicsWebp : physicsJpeg}/>
       <Card title="· Pun Video II" src={webpIsSupported() ? videoWebp : videoJpeg}/>
-      <MoreButton/>
+      <MoreButton link="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg/videos"/>
     </div>
   );
 

@@ -1,7 +1,6 @@
 import Container from "../utils/container";
 import Icon from "../utils/icon";
 import wordpress from "../../icons/social/wordpress.svg";
-import Card from "../utils/card";
 import webpIsSupported from "../../helpers/webp";
 import musicWebp from "../../images/webp/music.webp";
 import musicJpeg from "../../images/jpeg/music.jpg";
@@ -11,6 +10,7 @@ import artWebp from "../../images/webp/art.webp";
 import artJpeg from "../../images/jpeg/art.jpg";
 import React from "react";
 import BlogCard from "./BlogCard";
+import MoreButton from "./MoreButton";
 
 const denominator = 15;
 
@@ -21,12 +21,10 @@ const BlogsCard = () => {
 
   const body = (
       <div>
-        <BlogCard num={1} den={denominator} title="Music Home Tuition"/>
-        <BlogCard num={1} den={denominator} title="Foreign Language"/>
-        <BlogCard num={1} den={denominator} title="Art Home Tuition"/>
-        <Card title="· 7+ Nature Facts" src={webpIsSupported() ? musicWebp : musicJpeg}/>
-        <Card title="· 7+ Maths Facts" src={webpIsSupported() ? languageWebp : languageJpeg}/>
-        <Card title="· 7+ Physics Facts" src={webpIsSupported() ? artWebp : artJpeg}/>
+        <BlogCard num={1} den={denominator} title="Music Home Tuition" src={webpIsSupported() ? musicWebp : musicJpeg}/>
+        <BlogCard num={1} den={denominator} title="Foreign Language" src={webpIsSupported() ? languageWebp : languageJpeg}/>
+        <BlogCard num={1} den={denominator} title="Art Home Tuition" src={webpIsSupported() ? artWebp : artJpeg}/>
+        <MoreButton link="https://rabbiits.wordpress.com/author/rabbiitech/"/>
       </div>
   );
 
