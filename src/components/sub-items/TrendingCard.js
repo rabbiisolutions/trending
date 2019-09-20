@@ -19,9 +19,9 @@ import MoreButton from "./MoreButton";
 
 const TrendingCard = () => {
   const icons = (<span className="icons">
-    <Icon src={youtube} height={1.5} width={1.5}/>
-    <Icon src={facebook} height={1.5} width={1.5}/>
-    <Icon src={twitter} height={1.5} width={1.5}/>
+    <Icon src={youtube} height={2.5} width={2.5} className="youtube"/>
+    <Icon src={facebook} height={2.5} width={2.5} className="facebook"/>
+    <Icon src={twitter} height={2.5} width={2.5} className="twitter"/>
   </span>);
 
   const body = (
@@ -35,7 +35,7 @@ const TrendingCard = () => {
   );
 
   return (
-    <Container title="Trending" icons={icons} body={body}/>
+    <Container title="Trending" icons={icons} body={body} context="trending"/>
   );
 };
 

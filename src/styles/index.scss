@@ -3,7 +3,8 @@ $colors: (
         magenta: #DC00FE, mirage: #1B2531, dullMirage: rgba(27, 37, 49, 0.8), scorpion: #625E5D,
         bluewood: #263246, vividViolet: #9F34AF, purple: #740186, grey: #CBC6C6, darkGrey: #A8A8A8,
         bondiBlue: #00AEAE, blueStone: #006A6A, clairvoyant: #36043E, ripePlum: #5B0069,
-        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3, robinsEggBlue: #01d3d3, azure: #0009D5
+        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3, robinsEggBlue: #01d3d3, azure: #0009D5,
+        youtube: #DD0000, wordpress: #21759B
 );
 
 @function color($name) {
@@ -112,13 +113,118 @@ body {
 
     .trending {
         margin-top: $navBarHeight;
-        padding: 4em 5em;
-        background: linear-gradient(180deg, #5B2064 0%, #006A6A 100%);
+        padding: 4em 6em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //background-color: black;
+        background: linear-gradient(180deg, rgba(111, 152, 180, 0.88) 0%, rgba(0, 106, 106, 0.81) 100%);
 
         .trending-video {
             display: flex;
             justify-content: center;
+
+            iframe {
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
+                //border-radius: 10px;
+                border: 1px solid;
+            }
         }
+
+        .container {
+            border-radius: 10px;
+            padding: 0;
+        }
+
+        .container.trending {
+            background: rgba(31, 29, 44, 0.9);
+            //box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.52);
+            //width: 1099.57px;
+            padding: 0 0 2em 0;
+
+            .header {
+                background: #B9D8EA;
+                border-radius: 10px 10px 0 0;
+                width: inherit;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 70px;
+
+                .title {
+                    font-weight: bold;
+                    font-size: 36px;
+                }
+
+                .icons {
+                    .youtube {
+                        color: color(youtube);
+                        margin-right: 30px;
+                    }
+                    .twitter {
+                        color: color(twitter);
+                    }
+                    .facebook {
+                        color: color(facebook);
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            .body {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 0 10px 10px 10px;
+
+                .card {
+                    margin-top: 30px;
+                    width: 63%;
+                    background: #1E1C2C;
+                    border: 1px solid #64117A;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    align-items: center;
+                    box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+
+                    .header {
+                        color: #DC00FF;
+                        font-family: Comic Sans MS, sans-serif;
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: 32px;
+                        background-color: transparent;
+                    }
+
+                    .body {
+
+                    }
+                }
+
+                .btn-link {
+                    display: flex;
+                    flex-flow: row-reverse;
+                    width: fit-content;
+                    margin-top: 30px;
+                    color: #13121B;
+                    font-weight: bold;
+                    font-size: 32px;
+                    background: #DC00FF;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+    }
+
+    .card-image {
+        width: 520px;
+        height: 300px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .blog-image {
+        width: 576px;
+        height: 324px;
+        border-radius: 10px;
     }
 
     .our-services {
