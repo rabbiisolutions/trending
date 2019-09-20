@@ -1,6 +1,6 @@
 import Container from "../utils/container";
 import Icon from "../utils/icon";
-import wordpress from "../../icons/social/wordpress.svg";
+import wordpress from "../../icons/social/wordpress-brands.svg";
 import webpIsSupported from "../../helpers/webp";
 import musicWebp from "../../images/webp/music.webp";
 import musicJpeg from "../../images/jpeg/music.jpg";
@@ -16,14 +16,14 @@ const denominator = 15;
 
 const BlogsCard = () => {
   const icons = (<span className="icons">
-    <Icon src={wordpress} height={1.5} width={1.5}/>
+    <Icon src={wordpress} height={2.5} width={2.5} className="wordpress"/>
   </span>);
 
   const body = (
-      <div>
+      <div className="body">
         <BlogCard num={1} den={denominator} title="Music Home Tuition" src={webpIsSupported() ? musicWebp : musicJpeg}/>
-        <BlogCard num={1} den={denominator} title="Foreign Language" src={webpIsSupported() ? languageWebp : languageJpeg}/>
-        <BlogCard num={1} den={denominator} title="Art Home Tuition" src={webpIsSupported() ? artWebp : artJpeg}/>
+        <BlogCard num={2} den={denominator} title="Foreign Language" src={webpIsSupported() ? languageWebp : languageJpeg}/>
+        <BlogCard num={3} den={denominator} title="Art Home Tuition" src={webpIsSupported() ? artWebp : artJpeg}/>
         <MoreButton link="https://rabbiits.wordpress.com/author/rabbiitech/"/>
       </div>
   );

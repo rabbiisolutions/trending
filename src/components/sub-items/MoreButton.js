@@ -5,7 +5,7 @@ import React from "react";
 
 const MoreButton = (props) => {
   return (
-      <ButtonLink icon={<Icon src={link} height={1} width={1}/>} value="more" link={props.link}/>
+      <ButtonLink icon={<Icon src={link} height={1} width={1} className="external"/>} value="more" link={props.link}/>
   );
 };
 

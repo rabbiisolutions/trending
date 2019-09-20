@@ -7,8 +7,9 @@ const Container = (props) => {
           <span className="title">{props.title}</span>
           {props.icons}
         </div>
-        <div className="body">
-          {props.body}
+        {props.body}
+        <div className="footer">
+          {props.footer}
         </div>
       </section>
   );

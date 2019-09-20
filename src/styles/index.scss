@@ -112,24 +112,14 @@ body {
     }
 
     .trending {
-        margin-top: $navBarHeight;
-        padding: 4em 6em;
+        margin-top: 2.6em;
+        padding: 0 6em 4em;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         //background-color: black;
         background: linear-gradient(180deg, rgba(111, 152, 180, 0.88) 0%, rgba(0, 106, 106, 0.81) 100%);
-
-        .trending-video {
-            display: flex;
-            justify-content: center;
-
-            iframe {
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
-                //border-radius: 10px;
-                border: 1px solid;
-            }
-        }
 
         .container {
             border-radius: 10px;
@@ -137,14 +127,18 @@ body {
         }
 
         .container.trending {
-            background: rgba(31, 29, 44, 0.9);
+            background: transparent;
+            //background: rgba(31, 29, 44, 0.9);
             //box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.52);
             //width: 1099.57px;
             padding: 0 0 2em 0;
+            margin-bottom: 7em;
+            width: 90%;
 
             .header {
-                background: #B9D8EA;
+                //background: #B9D8EA;
                 border-radius: 10px 10px 0 0;
+                border-bottom: 1px solid;
                 width: inherit;
                 display: flex;
                 justify-content: space-between;
@@ -173,17 +167,20 @@ body {
             .body {
                 display: grid;
                 grid-template-columns: auto auto;
+                column-gap: 20px;
                 padding: 0 10px 10px 10px;
+                width: inherit;
 
                 .card {
                     margin-top: 30px;
-                    width: 63%;
+                    max-width: fit-content;
                     background: #1E1C2C;
                     border: 1px solid #64117A;
                     box-sizing: border-box;
                     border-radius: 15px;
                     align-items: center;
                     box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+                    height: fit-content;
 
                     .header {
                         color: #DC00FF;
@@ -192,6 +189,7 @@ body {
                         font-weight: bold;
                         font-size: 32px;
                         background-color: transparent;
+                        border: 0;
                     }
 
                     .body {
@@ -199,9 +197,18 @@ body {
                     }
                 }
 
+                .card:nth-child(even) {
+                    margin-top: 300px;
+                }
+            }
+            .footer {
+                display: flex;
+                justify-content: center;
+
                 .btn-link {
                     display: flex;
                     flex-flow: row-reverse;
+                    justify-content: space-between;
                     width: fit-content;
                     margin-top: 30px;
                     color: #13121B;
@@ -216,36 +223,103 @@ body {
         .container.blogs {
             background: rgba(43, 43, 43, 0.93);
             box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+            margin-bottom: 70px;
+            padding-bottom: 30px;
+            width: 77%;
 
             .header {
+                background: #E6EFED;
+                border-radius: 10px 10px 0 0;
+                width: content-box;
+                display: flex;
+                flex-flow: row-reverse;
+                justify-content: space-between;
+                padding: 20px 70px;
+
                 .title {
-
+                    font-weight: bold;
+                    font-size: 36px;
                 }
-                .icons {
 
+                .icons {
+                    .wordpress {
+                        color: color(wordpress);
+                        margin-right: 30px;
+                    }
                 }
             }
 
             .body {
+                color: #01FEFE;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 30px;
+
                 .blog-card {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+
                     .text {
+                        font-family: Comic Sans MS, sans-serif;
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: 28px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 2em;
+
                         .blog-num {
 
                         }
                         .blog-title {
-
+                            display: inline-block;
                         }
                     }
                     .image {
 
                     }
                 }
+
+                .blog-card:nth-child(even) {
+                    flex-flow: row-reverse;
+                }
+
+                .btn-link {
+                    display: flex;
+                    flex-flow: row-reverse;
+                    justify-content: space-between;
+                    width: fit-content;
+                    margin-top: 30px;
+                    color: #282828;
+                    font-weight: bold;
+                    font-size: 32px;
+                    background: #01FEFE;
+                    padding: 10px 20px;
+                }
+            }
+        }
+
+        .trending-video {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            iframe {
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
+                border-radius: 3px;
+                //border: 1px solid;
             }
         }
 
         .social-links {
-            background: #FEFEFE;
-            box-shadow: 7px 7px 4px rgba(255, 255, 255, 0.25);
+            //background: #FEFEFE;
+            background: rgba(254, 254, 254, 0.87);
+            box-shadow: 7px 7px 4px rgba(21, 21, 21, 0.25);
             border-radius: 10px;
             padding: 15px 30px 30px 30px;
 
@@ -643,4 +717,7 @@ body {
     cursor: $pointer;
     box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
     text-decoration: none;
+    .external {
+        margin-left: 10px;
+    }
 }

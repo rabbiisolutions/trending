@@ -25,17 +25,16 @@ const TrendingCard = () => {
   </span>);
 
   const body = (
-    <div>
-      <Card title="· 7+ Nature Facts" src={webpIsSupported() ? natureWebp : natureJpeg}/>
+    <div className="body">
       <Card title="· 7+ Maths Facts" src={webpIsSupported() ? mathsWebp : mathsJpeg}/>
+      <Card title="· 7+ Nature Facts" src={webpIsSupported() ? natureWebp : natureJpeg}/>
       <Card title="· 7+ Physics Facts" src={webpIsSupported() ? physicsWebp : physicsJpeg}/>
       <Card title="· Pun Video II" src={webpIsSupported() ? videoWebp : videoJpeg}/>
-      <MoreButton link="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg/videos"/>
     </div>
   );
 
   return (
-    <Container title="Trending" icons={icons} body={body} context="trending"/>
+    <Container title="Trending" icons={icons} body={body} context="trending" footer={<MoreButton link="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg/videos"/>}/>
   );
 };
 

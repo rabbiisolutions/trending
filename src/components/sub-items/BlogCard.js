@@ -4,10 +4,10 @@ const BlogCard = (props) => {
   return (
     <div className="blog-card">
      <div className="text">
-       <span className="blog-num">
-         <sup>{props.num}</sup>&frasl;<sub>{props.den}</sub>
-       </span>
-       <span className="blog-title">{props.title}</span>
+       <div className="blog-num">
+         <sup>{props.num}</sup><span>&frasl;</span><sub>{props.den}</sub>
+       </div>
+       <div className="blog-title">{props.title}</div>
      </div>
       <div className="image">
         <img alt="card-display" className="blog-image" src={props.src}/>

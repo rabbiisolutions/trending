@@ -7,9 +7,9 @@ import React from "react";
 const TrendingView = () => {
   return (
       <div className="trending">
-        <TrendingVideo/>
         <TrendingCard/>
         <BlogsCard/>
+        <TrendingVideo/>
         <SocialLinks/>
       </div>
   );
