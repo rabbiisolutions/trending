@@ -29,7 +29,7 @@ const BlogsCard = () => {
   );
 
   return (
-      <Container title="Blogs" icons={icons} body={body}/>
+      <Container title="Blogs" icons={icons} body={body} context="blogs"/>
   );
 
 };
