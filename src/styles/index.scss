@@ -112,7 +112,7 @@ body {
     }
 
     .trending {
-        margin-top: 2.6em;
+        margin-top: 3.6em;
         padding: 0 6em 4em;
         display: flex;
         flex-direction: column;
@@ -127,18 +127,18 @@ body {
         }
 
         .container.trending {
-            background: transparent;
-            //background: rgba(31, 29, 44, 0.9);
-            //box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.52);
+            //background: transparent;
+            background: rgba(31, 29, 44, 0.9);
+            box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.52);
             //width: 1099.57px;
             padding: 0 0 2em 0;
             margin-bottom: 7em;
             width: 90%;
 
             .header {
-                //background: #B9D8EA;
+                background: #B9D8EA;
                 border-radius: 10px 10px 0 0;
-                border-bottom: 1px solid;
+                //border-bottom: 1px solid;
                 width: inherit;
                 display: flex;
                 justify-content: space-between;
@@ -169,17 +169,17 @@ body {
                 grid-template-columns: auto auto;
                 column-gap: 20px;
                 padding: 0 10px 10px 10px;
-                width: inherit;
+                //width: inherit;
 
                 .card {
                     margin-top: 30px;
-                    max-width: fit-content;
-                    background: #1E1C2C;
-                    border: 1px solid #64117A;
+                    //width: fit-content;
+                    //background: #1E1C2C;
+                    //border: 1px solid #64117A;
                     box-sizing: border-box;
                     border-radius: 15px;
                     align-items: center;
-                    box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
+                    //box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
                     height: fit-content;
 
                     .header {
@@ -198,7 +198,7 @@ body {
                 }
 
                 .card:nth-child(even) {
-                    margin-top: 300px;
+                    //margin-top: 250px;
                 }
             }
             .footer {
@@ -223,7 +223,7 @@ body {
         .container.blogs {
             background: rgba(43, 43, 43, 0.93);
             box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
-            margin-bottom: 70px;
+            margin-bottom: 7em;
             padding-bottom: 30px;
             width: 77%;
 
@@ -304,92 +304,106 @@ body {
             }
         }
 
-        .trending-video {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
+        .end {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 50px;
 
-            iframe {
-                box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
-                border-radius: 3px;
-                //border: 1px solid;
-            }
-        }
+            .trending-video {
+                //display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
 
-        .social-links {
-            //background: #FEFEFE;
-            background: rgba(254, 254, 254, 0.87);
-            box-shadow: 7px 7px 4px rgba(21, 21, 21, 0.25);
-            border-radius: 10px;
-            padding: 15px 30px 30px 30px;
-
-            .tag-line {
-                text-align: center;
-                font-size: 24px;
-                color: #1B2531;
-                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-                margin-bottom: 20px;
+                iframe {
+                    //box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
+                    //border-radius: 3px;
+                    //border: 1px solid;
+                }
             }
 
-            .social-pages {
-                font-size: 24px;
-                font-weight: 900;
-                display: flex;
-                //align-items: center;
-                justify-content: space-around;
-                //display: inline-grid;
-                //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            .social-links {
+                //background: #FEFEFE;
+                background: rgba(254, 254, 254, 0.87);
+                box-shadow: 7px 7px 4px rgba(21, 21, 21, 0.25);
+                border-radius: 5px;
+                padding: 15px 30px 15px 30px;
+                height: fit-content;
 
-                .facebook {
-                    color: #3B5999;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    .title {
-                        margin-bottom: 20px;
-                    }
-                    .links {
-
-                    }
+                .tag-line {
+                    text-align: center;
+                    font-size: 20px;
+                    text-decoration: underline;
+                    color: #1B2531;
+                    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                    margin-bottom: 20px;
                 }
-                .twitter {
-                    color: #0c7abf;
+
+                .social-pages {
+                    font-size: 24px;
+                    font-weight: 900;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .title {
-                        margin-bottom: 20px;
-                    }
-                    .links {
+                    //align-items: center;
+                    justify-content: start;
+                    align-items: start;
+                    //display: inline-grid;
+                    //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-                    }
-                }
-                .wordpress {
-                    color: #21759B;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .title {
+                    .facebook {
+                        color: #3B5999;
+                        display: flex;
+                        flex-direction: column;
+                        //justify-content: center;
+                        align-items: center;
                         margin-bottom: 20px;
-                    }
-                    .links {
-                        font-size: .6em;
-                        a {
-                            background: #21759B;
-                            color: white;
-                            padding: .3em 1em;
-                            border-radius: 5px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            align-items: center;
 
-                            .wordpress-icon span svg {
-                                margin-right: 10px;
+                        .title {
+                            margin-bottom: 5px;
+                        }
+                        .links {
+
+                        }
+                    }
+                    .twitter {
+                        color: #0c7abf;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 35px;
+
+                        .title {
+                            margin-bottom: 5px;
+                        }
+                        .links {
+
+                        }
+                    }
+                    .wordpress {
+                        color: #21759B;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        .title {
+                            margin-bottom: 5px;
+                        }
+                        .links {
+                            font-size: .6em;
+                            a {
+                                background: #21759B;
+                                color: white;
+                                padding: .3em 1em;
+                                border-radius: 5px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+
+                                .wordpress-icon span svg {
+                                    margin-right: 10px;
+                                }
                             }
                         }
                     }
@@ -401,7 +415,7 @@ body {
     .card-image {
         width: 520px;
         height: 300px;
-        border-radius: 0 0 15px 15px;
+        border-radius: 15px;
     }
 
     .blog-image {

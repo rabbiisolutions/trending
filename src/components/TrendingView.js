@@ -9,8 +9,10 @@ const TrendingView = () => {
       <div className="trending">
         <TrendingCard/>
         <BlogsCard/>
-        <TrendingVideo/>
-        <SocialLinks/>
+        <section className="end">
+          <TrendingVideo/>
+          <SocialLinks/>
+        </section>
       </div>
   );
 };

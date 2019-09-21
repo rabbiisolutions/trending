@@ -6,7 +6,7 @@ import Icon from "../utils/icon";
 const SocialLinks = () => {
   return (
       <section className="social-links">
-        <div className="tag-line">This week on</div>
+        <div className="tag-line">this week on</div>
         <div className="social-pages">
           <div className="facebook">
             <div className="title">&middot;&nbsp;Facebook&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</div>
