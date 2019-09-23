@@ -14,7 +14,7 @@ const SocialMedia = () => {
             <div className="links">
               <iframe
                   src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frabbiitech%2F&width=146&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId"
-                  width="146" height="46" scrolling="no"
+                  width="146" height="30" scrolling="no"
                   frameBorder="0" allowTransparency="true" allow="encrypted-media" title="facebook"/>
             </div>
           </div>

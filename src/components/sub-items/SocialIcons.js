@@ -6,12 +6,14 @@ import Icon from "../utils/icon";
 import React from "react";
 
 const SocialIcons = () => {
-  return (<div className="social-icons">
-    <Icon src={youtube} height={2.5} width={2.5} className="youtube"/>
-    <Icon src={twitter} height={2.5} width={2.5} className="twitter"/>
-    <Icon src={facebook} height={2.5} width={2.5} className="facebook"/>
-    <Icon src={wordpress} height={2.5} width={2.5} className="wordpress"/>
-  </div>);
+  return (
+      <div className="social-icons hidden">
+        <Icon src={youtube} height={2.5} width={2.5} className="youtube"/>
+        <Icon src={twitter} height={2.5} width={2.5} className="twitter"/>
+        <Icon src={facebook} height={2.5} width={2.5} className="facebook"/>
+        <Icon src={wordpress} height={2.5} width={2.5} className="wordpress"/>
+      </div>
+  );
 };
 
 export default SocialIcons;

@@ -17,7 +17,7 @@ $webkitRadius : 10em;
 $borderRadius: 10em;
 $font24: 1em;
 $desktop: 800px;
-$monitor: 1192px;
+$monitor: 1100px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
@@ -26,7 +26,7 @@ $monitor: 1192px;
 }
 
 @mixin monitor {
-    @media (max-width: #{$monitor}) {
+    @media (min-width: #{$monitor}) {
         @content;
     }
 }
@@ -114,8 +114,13 @@ body {
     main {
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         margin-top: $navBarHeight;
         padding: 2em .5em;
+
+        @include desktop {
+            padding: 4em;
+        }
     }
 
     .jpeg {
@@ -132,6 +137,14 @@ body {
         color: color(black);
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         margin-left: 1.5rem;
+
+        @include monitor {
+            margin-left: 3em;
+        }
+
+        @include desktop {
+            font-size: 36px;
+        }
     }
 
     .video-card {
@@ -142,6 +155,17 @@ body {
         width: 252px;
         height: 190px;
 
+        @include desktop {
+            padding: 1em;
+            width: 450px;
+            height: 320px;
+        }
+
+        @include monitor {
+            width: 600px;
+            height: 420px;
+        }
+
         .title {
             font-family: Comic Sans MS, sans-serif;
             font-weight: bold;
@@ -149,13 +173,28 @@ body {
             text-align: center;
             color: color(magenta);
             margin-bottom: .5rem;
+            @include desktop {
+                margin-bottom: 1em;
+            }
+            @include monitor {
+                font-size: 28px;
+            }
         }
 
         .video iframe{
             border-radius: 5px;
-            border: 1px solid #64117A;
+            //border: 1px solid #64117A;
             width: 250px;
             height: 145px;
+            @include desktop {
+                height: 270px;
+                width: 450px;
+            }
+
+            @include monitor {
+                height: 350px;
+                width: 600px;
+            }
         }
     }
 
@@ -166,16 +205,35 @@ body {
         grid-template-columns: auto auto auto auto auto;
         column-gap: 20px;
         overflow-x: scroll;
-        //justify-content: center;
         align-items: center;
         padding-right: 2rem;
+
+        @include desktop {
+            column-gap: 3em;
+            margin-top: .65em;
+        }
+
+        @include monitor {
+            margin-left: 10em;
+            margin-top: 1em;
+            column-gap: 5em;
+        }
     }
 
     .videos-frame {
         height: 260px;
+
         .more {
             color: #13121B;
             background: #DC00FF;
+        }
+
+        @include desktop {
+            height: 400px;
+        }
+
+        @include monitor {
+            height: 500px;
         }
     }
 
@@ -185,12 +243,26 @@ body {
             color: #282828;
             background: #01FEFE;
         }
+
+        @include monitor {
+            height: 590px;
+        }
     }
 
     .blog-image {
         width: 250px;
         height: 159px;
         border-radius: 10px;
+
+        @include desktop {
+            height: 250px;
+            width: 450px;
+        }
+
+        @include monitor {
+            width: 550px;
+            height: 300px;
+        }
     }
 
     .more {
@@ -213,25 +285,45 @@ body {
         border-radius: 5px;
         padding: .5rem;
 
+        @include desktop {
+            width: 450px;
+            height: 420px;
+        }
+
+        @include monitor {
+            width: 550px;
+            height: 500px;
+            padding: 1em;
+        }
+
         .header {
             color: #01FEFE;
             font-weight: bold;
             font-family: Comic Sans MS, sans-serif;
-            margin-bottom: .5rem;
             min-height: 86px;
             .num {
-                //font-style: italic;
                 font-size: 22px;
                 text-decoration-line: underline;
                 letter-spacing: 2px;
+                @include desktop {
+                    margin-bottom: .5em;
+                }
             }
             .title {
                 font-size: 20px;
                 text-align: center;
+                @include monitor {
+                    font-size: 24px;
+                }
             }
         }
+
+        .image {
+            margin: .5rem 0;
+        }
+
         .content {
-            font-size: 18px;
+            font-size: 16px;
             color: #DCDCDC;
         }
     }
@@ -247,12 +339,22 @@ body {
         align-items: center;
         text-align: center;
 
+        @include monitor {
+            font-size: 32px;
+        }
+
+        .links {
+            @include desktop {
+                display: none;
+            }
+        }
+
         .facebook {
             display: flex;
             flex-direction: column;
             //justify-content: center;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 25px;
 
             .title {
                 margin-bottom: 5px;
@@ -290,309 +392,6 @@ body {
             }
         }
     }
-
-    /*.trending {
-        margin-top: 3.6em;
-        padding: 0 6em 4em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        //background-color: black;
-        background: linear-gradient(180deg, rgba(111, 152, 180, 0.88) 0%, rgba(0, 106, 106, 0.81) 100%);
-
-        .container {
-            border-radius: 10px;
-            padding: 0;
-        }
-
-        .container.trending {
-            //background: transparent;
-            background: rgba(31, 29, 44, 0.9);
-            box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.52);
-            //width: 1099.57px;
-            padding: 0 0 2em 0;
-            margin-bottom: 7em;
-            width: 90%;
-
-            .header {
-                background: #B9D8EA;
-                border-radius: 10px 10px 0 0;
-                //border-bottom: 1px solid;
-                width: inherit;
-                display: flex;
-                justify-content: space-between;
-                padding: 20px 70px;
-
-                .title {
-                    font-weight: bold;
-                    font-size: 36px;
-                }
-
-                .icons {
-                    .youtube {
-                        color: color(youtube);
-                        margin-right: 30px;
-                    }
-                    .twitter {
-                        color: color(twitter);
-                    }
-                    .facebook {
-                        color: color(facebook);
-                        margin-right: 30px;
-                    }
-                }
-            }
-
-            .body {
-                display: grid;
-                grid-template-columns: auto auto;
-                column-gap: 20px;
-                padding: 0 10px 10px 10px;
-                //width: inherit;
-
-                .card {
-                    margin-top: 30px;
-                    //width: fit-content;
-                    //background: #1E1C2C;
-                    //border: 1px solid #64117A;
-                    box-sizing: border-box;
-                    border-radius: 15px;
-                    align-items: center;
-                    //box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.25);
-                    height: fit-content;
-
-                    .header {
-                        color: #DC00FF;
-                        font-family: Comic Sans MS, sans-serif;
-                        font-style: italic;
-                        font-weight: bold;
-                        font-size: 32px;
-                        background-color: transparent;
-                        border: 0;
-                    }
-
-                    .body {
-
-                    }
-                }
-
-                .card:nth-child(even) {
-                    //margin-top: 250px;
-                }
-            }
-            .footer {
-                display: flex;
-                justify-content: center;
-
-
-
-            }
-        }
-
-        .container.blogs {
-            background: rgba(43, 43, 43, 0.93);
-            box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
-            margin-bottom: 7em;
-            padding-bottom: 30px;
-            width: 77%;
-
-            .header {
-                background: #E6EFED;
-                border-radius: 10px 10px 0 0;
-                width: content-box;
-                display: flex;
-                flex-flow: row-reverse;
-                justify-content: space-between;
-                padding: 20px 70px;
-
-                .title {
-                    font-weight: bold;
-                    font-size: 36px;
-                }
-
-                .icons {
-                    .wordpress {
-                        color: color(wordpress);
-                        margin-right: 30px;
-                    }
-                }
-            }
-
-            .body {
-                color: #01FEFE;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding-top: 30px;
-
-                .blog-card {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 30px;
-
-                    .text {
-                        font-family: Comic Sans MS, sans-serif;
-                        font-style: italic;
-                        font-weight: bold;
-                        font-size: 28px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 0 2em;
-
-                        .blog-num {
-
-                        }
-                        .blog-title {
-                            display: inline-block;
-                        }
-                    }
-                    .image {
-
-                    }
-                }
-
-                .blog-card:nth-child(even) {
-                    flex-flow: row-reverse;
-                }
-
-                .btn-link {
-                    display: flex;
-                    flex-flow: row-reverse;
-                    justify-content: space-between;
-                    width: fit-content;
-                    margin-top: 30px;
-                    color: #282828;
-                    font-weight: bold;
-                    font-size: 32px;
-                    background: #01FEFE;
-                    padding: 10px 20px;
-                }
-            }
-        }
-
-        .end {
-            display: grid;
-            grid-template-columns: auto auto;
-            column-gap: 50px;
-
-            .trending-video {
-                //display: flex;
-                justify-content: center;
-                margin-bottom: 50px;
-
-                iframe {
-                    //box-shadow: 4px 4px 4px rgba(0, 0, 0, 10);
-                    //border-radius: 3px;
-                    //border: 1px solid;
-                }
-            }
-
-            .social-links {
-                //background: #FEFEFE;
-                background: rgba(254, 254, 254, 0.87);
-                box-shadow: 7px 7px 4px rgba(21, 21, 21, 0.25);
-                border-radius: 5px;
-                padding: 15px 30px 15px 30px;
-                height: fit-content;
-
-                .tag-line {
-                    text-align: center;
-                    font-size: 20px;
-                    text-decoration: underline;
-                    color: #1B2531;
-                    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-                    margin-bottom: 20px;
-                }
-
-                .social-pages {
-                    font-size: 24px;
-                    font-weight: 900;
-                    display: flex;
-                    flex-direction: column;
-                    //align-items: center;
-                    justify-content: start;
-                    align-items: start;
-                    //display: inline-grid;
-                    //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
-                    .facebook {
-                        color: #3B5999;
-                        display: flex;
-                        flex-direction: column;
-                        //justify-content: center;
-                        align-items: center;
-                        margin-bottom: 20px;
-
-                        .title {
-                            margin-bottom: 5px;
-                        }
-                        .links {
-
-                        }
-                    }
-                    .twitter {
-                        color: #0c7abf;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 35px;
-
-                        .title {
-                            margin-bottom: 5px;
-                        }
-                        .links {
-
-                        }
-                    }
-                    .wordpress {
-                        color: #21759B;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 30px;
-                        .title {
-                            margin-bottom: 5px;
-                        }
-                        .links {
-                            font-size: .6em;
-                            a {
-                                background: #21759B;
-                                color: white;
-                                padding: .3em 1em;
-                                border-radius: 5px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: center;
-                                align-items: center;
-
-                                .wordpress-icon span svg {
-                                    margin-right: 10px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .card-image {
-        width: 520px;
-        height: 300px;
-        border-radius: 15px;
-    }
-
-    .blog-image {
-        width: 576px;
-        height: 324px;
-        border-radius: 10px;
-    }*/
 
     .our-services {
         position: fixed;
@@ -918,15 +717,19 @@ body {
 .social-icons, .social-buttons {
     background: #E8E8E8;
     border-radius: 3px;
-    display: grid;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
     justify-items: center;
+    z-index: 50;
+    position: fixed;
+
+    @include desktop{
+        display: grid;
+    }
 }
 
 .social-icons {
-    position: fixed;
     left: 0;
     top: 217px;
 
@@ -941,12 +744,11 @@ body {
         color: color(facebook);
     }
     .wordpress {
-        color: #21759B;
+        color: color(wordpress);
     }
 }
 
 .social-buttons {
-    position: fixed;
     right: 0;
     top: 250px;
     padding: .7em;
