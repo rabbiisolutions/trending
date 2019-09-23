@@ -4,13 +4,16 @@ import Image from "../utils/image";
 const ImageCard = (props) => {
   return (
       <div className="image-card">
-        <div className="title">
-          <div>#0{props.number}</div>
-          <div>{props.title}</div>
-        </div>
-        <div className="image">
+        <section className="header">
+          <div className="num">#0{props.number}</div>
+          <div className="title">{props.title}</div>
+        </section>
+        <section className="image">
           <Image src={props.src} className={props.className} alt={props.alt}/>
-        </div>
+        </section>
+        <section className="content">
+          {props.content}
+        </section>
       </div>
   );
 };

@@ -21,13 +21,13 @@ const blogs = 'Blogs';
 const videos = {
   maths: "obRan47jNT0", physics: "vfeXAvUbeVk", pun: "j5wR-DuqJXY"
 };
-
+const socialMedia = 'Social Media';
 
 const texts = {
   menuTitle: menuTitle, menuItems: menuItems, ourServices: ourServices, hidden: hidden, signUp: signUp,
   contacts: contacts, findUs: findUs, safaricom: safaricom, telkom: telkom, sema: sema, hr: hr,
   mathsFact: mathsFact, natureFact: natureFact, physicsFact: physicsFact, punVideo: punVideo, trending: trending,
-  blogs: blogs, videos: videos
+  blogs: blogs, videos: videos, socialMedia: socialMedia
 };
 
 export default texts;
