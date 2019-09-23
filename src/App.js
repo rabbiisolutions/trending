@@ -7,11 +7,15 @@ import NavBar from "./components/mobile/navBar";
 import MobileFooter from "./components/mobile/footer";
 import SignUpModal from "./components/signUpModal";
 import texts from "./constants/texts";
+import SocialIcons from "./components/sub-items/SocialIcons";
+import SocialButtons from "./components/sub-items/SocialButtons";
 
 function App() {
   return (
       <Router>
         <NavBar/>
+        <SocialIcons/>
+        <SocialButtons/>
         <TrendingView/>
         <SideBar/>
         <SignUpModal/>

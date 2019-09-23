@@ -287,21 +287,6 @@ body {
 
             .links {
                 font-size: .6em;
-
-                a {
-                    background: color(wordpress);
-                    color: white;
-                    padding: .3em 1em;
-                    border-radius: 5px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-
-                    .wordpress-icon span svg {
-                        margin-right: 10px;
-                    }
-                }
             }
         }
     }
@@ -927,5 +912,58 @@ body {
     text-decoration: none;
     .external {
         margin-left: 10px;
+    }
+}
+
+.social-icons, .social-buttons {
+    background: #E8E8E8;
+    border-radius: 3px;
+    display: grid;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-icons {
+    position: fixed;
+    left: 0;
+    top: 217px;
+
+    padding: .5em;
+    .youtube {
+        color: color(youtube);
+    }
+    .twitter {
+        color: color(twitter);
+    }
+    .facebook {
+        color: color(facebook);
+    }
+    .wordpress {
+        color: #21759B;
+    }
+}
+
+.social-buttons {
+    position: fixed;
+    right: 0;
+    top: 250px;
+    padding: .7em;
+    row-gap: 40px;
+}
+
+.btn-link.wordpress-btn {
+    background: color(wordpress);
+    color: white;
+    padding: .3em .5em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .wordpress-icon span svg {
+        margin-right: 10px;
     }
 }

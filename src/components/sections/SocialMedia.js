@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonLink from "../utils/ButtonLink";
-import wordpress from "../../icons/social/wordpress.svg"
+import wordpress from "../../icons/social/wordpress-brands.svg"
 import Icon from "../utils/icon";
 import texts from "../../constants/texts";
 
