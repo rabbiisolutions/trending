@@ -9,11 +9,25 @@ const menuTitle = 'Menu';
 const menuItems = ['Home', 'Our Services', 'About Us', 'FAQs', 'Contact Us', 'Trending'];
 const ourServices = ['TeeCha'];
 const hidden = 'hidden';
+const dot = '· ';
+const facts = ' Facts';
+const seven = '7+ ';
+const mathsFact = dot + seven + 'Maths' + facts;
+const natureFact = dot + seven + 'Maths' + facts;
+const physicsFact = dot + seven + 'Maths' + facts;
+const punVideo = dot + 'Pun Video II';
+const trending = 'Trending';
+const blogs = 'Blogs';
+const videos = {
+  maths: "obRan47jNT0", physics: "vfeXAvUbeVk", pun: "j5wR-DuqJXY"
+};
 
 
 const texts = {
   menuTitle: menuTitle, menuItems: menuItems, ourServices: ourServices, hidden: hidden, signUp: signUp,
-  contacts: contacts, findUs: findUs, safaricom: safaricom, telkom: telkom, sema: sema, hr: hr
+  contacts: contacts, findUs: findUs, safaricom: safaricom, telkom: telkom, sema: sema, hr: hr,
+  mathsFact: mathsFact, natureFact: natureFact, physicsFact: physicsFact, punVideo: punVideo, trending: trending,
+  blogs: blogs, videos: videos
 };
 
 export default texts;
