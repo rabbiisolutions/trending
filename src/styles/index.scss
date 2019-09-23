@@ -746,19 +746,23 @@ body {
 .social-icons {
     left: 0;
     top: 217px;
-
     padding: .5em;
+
     .youtube {
         color: color(youtube);
+        cursor: $pointer;
     }
     .twitter {
         color: color(twitter);
+        cursor: $pointer;
     }
     .facebook {
         color: color(facebook);
+        cursor: $pointer;
     }
     .wordpress {
         color: color(wordpress);
+        cursor: $pointer;
     }
 }
 
