@@ -7,7 +7,7 @@ import texts from "../../constants/texts";
 const SocialMedia = () => {
   return (
       <section className="social-links">
-        <div className="title">{texts.socialMedia}</div>
+        <div className="section-title">{texts.socialMedia}</div>
         <div className="social-pages">
           <div className="facebook">
             <a className="title" href="https://www.facebook.com/pg/rabbiitech/posts/">&middot;&nbsp;Facebook&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>

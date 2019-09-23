@@ -4,7 +4,7 @@ $colors: (
         bluewood: #263246, vividViolet: #9F34AF, purple: #740186, grey: #CBC6C6, darkGrey: #A8A8A8,
         bondiBlue: #00AEAE, blueStone: #006A6A, clairvoyant: #36043E, ripePlum: #5B0069,
         persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3, robinsEggBlue: #01d3d3, azure: #0009D5,
-        youtube: #DD0000, wordpress: #21759B
+        youtube: #DD0000, wordpress: #21759B, black: #000000
 );
 
 @function color($name) {
@@ -111,6 +111,83 @@ body {
         }
     }
 
+    main {
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: $navBarHeight;
+        padding: 2em .5em;
+    }
+    .jpeg {
+        background-image: url("../images/jpeg/doodles.jpg");
+    }
+
+    .webp {
+        background-image: url("../images/webp/doodles.webp");
+    }
+
+    .section-title {
+        font-weight: bold;
+        font-size: 28px;
+        color: color(black);
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        margin-left: 1.5rem;
+    }
+
+    .video-card {
+        background: #1E1C2C;
+        box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: .7rem;
+        width: 300px;
+        height: 190px;
+
+        .title {
+            font-family: Comic Sans MS, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: color(magenta);
+            margin-bottom: .7rem;
+        }
+
+        .video iframe{
+            border-radius: 5px;
+            border: 1px solid #64117A;
+        }
+    }
+
+    .videos-frame, .images-frame {
+        margin-top: 1.3em;
+        margin-bottom: 4rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        column-gap: 20px;
+        overflow-x: scroll;
+        //justify-content: center;
+        align-items: center;
+    }
+
+    .blog-image {
+        width: 250px;
+        height: 159px;
+        border-radius: 10px;
+    }
+
+    .more {
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        width: fit-content;
+        //margin-top: 30px;
+        color: #13121B;
+        font-weight: bold;
+        font-size: 24px;
+        background: #DC00FF;
+        height: fit-content;
+        padding: 10px 20px;
+        //margin-right: 10px;
+    }
+
     /*.trending {
         margin-top: 3.6em;
         padding: 0 6em 4em;
@@ -205,18 +282,8 @@ body {
                 display: flex;
                 justify-content: center;
 
-                .btn-link {
-                    display: flex;
-                    flex-flow: row-reverse;
-                    justify-content: space-between;
-                    width: fit-content;
-                    margin-top: 30px;
-                    color: #13121B;
-                    font-weight: bold;
-                    font-size: 32px;
-                    background: #DC00FF;
-                    padding: 10px 20px;
-                }
+
+
             }
         }
 
