@@ -10,7 +10,7 @@ const SocialMedia = () => {
         <div className="section-title">{texts.socialMedia}</div>
         <div className="social-pages">
           <div className="facebook">
-            <a className="title" href="https://www.facebook.com/pg/rabbiitech/posts/">&middot;&nbsp;Facebook&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>
+            <a className="title" href="https://www.facebook.com/pg/rabbiitech/posts/">Facebook&nbsp;:&nbsp;7+&nbsp;Human Anatomy&nbsp;Facts</a>
             <div className="links">
               <iframe
                   src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frabbiitech%2F&width=146&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId"
@@ -19,16 +19,16 @@ const SocialMedia = () => {
             </div>
           </div>
           <div className='twitter'>
-            <a className="title" href="https://twitter.com/RabbiiTech/media">&middot;&nbsp;Twitter&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>
+            <a className="title" href="https://twitter.com/RabbiiTech/media">Twitter&nbsp;:&nbsp;7+&nbsp;Human Anatomy&nbsp;Facts</a>
             <div className="links">
               <a href="https://twitter.com/RabbiiTech?ref_src=twsrc%5Etfw"
-                 className="twitter-follow-button" data-show-count="false">Follow @RabbiiTech</a>
+                 className="twitter-follow-button" data-show-count="true">Follow @RabbiiTech</a>
             </div>
           </div>
           <div className="wordpress">
-            <a className="title" href="https://rabbiits.wordpress.com/">&middot;&nbsp;Blogs&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>
+            <a className="title" href="https://rabbiits.wordpress.com/">Blogs&nbsp;:&nbsp;Cooking&nbsp;and&nbsp;Counselling Home Tuition</a>
             <div className="links">
-              <ButtonLink link="https://rabbiits.wordpress.com/" icon={<Icon src={wordpress} width={1.5} height={1.5} className="wordpress-icon"/>} value="Wordpress" className="wordpress-btn"/>
+              <ButtonLink link="https://rabbiits.wordpress.com/" icon={<Icon src={wordpress} width={1.5} height={1.5} className="wordpress-icon"/>} value="read @rabbiits" className="wordpress-btn"/>
             </div>
           </div>
         </div>

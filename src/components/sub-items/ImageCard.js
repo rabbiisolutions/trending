@@ -3,7 +3,7 @@ import Image from "../utils/image";
 
 const ImageCard = (props) => {
   return (
-      <div className="image-card">
+      <a className="image-card" href={props.url}>
         <section className="header">
           <div className="num">#0{props.number}</div>
           <div className="title">{props.title}</div>
@@ -14,7 +14,7 @@ const ImageCard = (props) => {
         <section className="content">
           {props.content}
         </section>
-      </div>
+      </a>
   );
 };
 
