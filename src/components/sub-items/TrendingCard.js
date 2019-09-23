@@ -15,6 +15,7 @@ import videoJpeg from "../../images/jpeg/video.jpg"
 import videoWebp from "../../images/webp/video.webp"
 import webpIsSupported from "../../helpers/webp";
 import MoreButton from "./MoreButton";
+import Video from "../utils/video";
 
 
 const TrendingCard = () => {
@@ -24,12 +25,14 @@ const TrendingCard = () => {
     <Icon src={twitter} height={2.5} width={2.5} className="twitter"/>
   </span>);
 
+  const image = (<img alt="card-display" src={webpIsSupported() ? natureWebp : natureJpeg} className="card-image"/>);
+
   const body = (
     <div className="body">
-      <Card title="· 7+ Maths Facts" src={webpIsSupported() ? mathsWebp : mathsJpeg}/>
-      <Card title="· 7+ Nature Facts" src={webpIsSupported() ? natureWebp : natureJpeg}/>
-      <Card title="· 7+ Physics Facts" src={webpIsSupported() ? physicsWebp : physicsJpeg}/>
-      <Card title="· Pun Video II" src={webpIsSupported() ? videoWebp : videoJpeg}/>
+      <Card title="· 7+ Maths Facts" body={<Video id="obRan47jNT0" title="maths-facts"/>}/>
+      <Card title="· 7+ Nature Facts" body={image}/>
+      <Card title="· 7+ Physics Facts" body={<Video id="vfeXAvUbeVk" title="physics-facts"/>}/>
+      <Card title="· Pun Video II" body={<Video id="j5wR-DuqJXY" title="pun-video"/>}/>
     </div>
   );
 

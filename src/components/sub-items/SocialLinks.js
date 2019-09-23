@@ -9,7 +9,7 @@ const SocialLinks = () => {
         <div className="tag-line">this week on</div>
         <div className="social-pages">
           <div className="facebook">
-            <div className="title">&middot;&nbsp;Facebook&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</div>
+            <a className="title" href="https://www.facebook.com/pg/rabbiitech/posts/">&middot;&nbsp;Facebook&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>
             <div className="links">
               <iframe
                   src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frabbiitech%2F&width=146&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId"
@@ -18,14 +18,14 @@ const SocialLinks = () => {
             </div>
           </div>
           <div className='twitter'>
-            <div className="title">&middot;&nbsp;Twitter&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</div>
+            <a className="title" href="https://twitter.com/RabbiiTech/media">&middot;&nbsp;Twitter&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>
             <div className="links">
               <a href="https://twitter.com/RabbiiTech?ref_src=twsrc%5Etfw"
                  className="twitter-follow-button" data-show-count="false">Follow @RabbiiTech</a>
             </div>
           </div>
           <div className="wordpress">
-            <div className="title">&middot;&nbsp;Blogs&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</div>
+            <a className="title" href="https://rabbiits.wordpress.com/">&middot;&nbsp;Blogs&nbsp;:&nbsp;7+&nbsp;Food&nbsp;Facts</a>
             <div className="links">
               <ButtonLink link="https://rabbiits.wordpress.com/" icon={<Icon src={wordpress} width={1.5} height={1.5} className="wordpress-icon"/>} value="Wordpress" className="wordpress-btn"/>
             </div>

@@ -7,12 +7,7 @@ import React from "react";
 const TrendingView = () => {
   return (
       <div className="trending">
-        <TrendingCard/>
-        <BlogsCard/>
-        <section className="end">
-          <TrendingVideo/>
-          <SocialLinks/>
-        </section>
+
       </div>
   );
 };
