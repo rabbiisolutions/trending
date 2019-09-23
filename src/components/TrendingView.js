@@ -7,7 +7,8 @@ import React from "react";
 const TrendingView = () => {
   return (
       <div className="trending">
-
+        <div className="section-title"></div>
+        <div></div>
       </div>
   );
 };

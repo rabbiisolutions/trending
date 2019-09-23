@@ -19,13 +19,14 @@ import Video from "../utils/video";
 
 
 const TrendingCard = () => {
-  const icons = (<span className="icons">
+  /*const icons = (<span className="icons">
     <Icon src={youtube} height={2.5} width={2.5} className="youtube"/>
     <Icon src={facebook} height={2.5} width={2.5} className="facebook"/>
     <Icon src={twitter} height={2.5} width={2.5} className="twitter"/>
-  </span>);
+  </span>);*/
 
-  const image = (<img alt="card-display" src={webpIsSupported() ? natureWebp : natureJpeg} className="card-image"/>);
+  //const image = (<img alt="card-display" src={webpIsSupported() ? natureWebp : natureJpeg}
+  // className="card-image"/>);
 
   const body = (
     <div className="body">
