@@ -8,6 +8,7 @@ const SocialMedia = () => {
   return (
       <section className="social-links">
         <div className="section-title">{texts.socialMedia}</div>
+        <div className="tag-line">(this week on)</div>
         <div className="social-pages">
           <div className="facebook">
             <a className="title" href="https://www.facebook.com/pg/rabbiitech/posts/">Facebook&nbsp;:&nbsp;7+&nbsp;Human Anatomy&nbsp;Facts</a>

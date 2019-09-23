@@ -10,6 +10,7 @@ import languageWebp from "../../images/webp/language.webp";
 import languageJpeg from "../../images/jpeg/language.jpg";
 import artWebp from "../../images/webp/art.webp";
 import artJpeg from "../../images/jpeg/art.jpg";
+import Overflow from "../utils/Overflow";
 
 const BlogsSection = () => {
   return (
@@ -29,6 +30,7 @@ const BlogsSection = () => {
                      url="https://rabbiits.wordpress.com/2019/08/23/art-is-love-and-life-is-love/"
           />
           <MoreButton link="https://rabbiits.wordpress.com/author/rabbiitech/"/>
+          <Overflow/>
         </div>
       </section>
   );

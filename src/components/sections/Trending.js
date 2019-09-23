@@ -2,6 +2,7 @@ import React from "react";
 import VideoCard from "../sub-items/VideoCard";
 import texts from "../../constants/texts";
 import MoreButton from "../sub-items/MoreButton";
+import Overflow from "../utils/Overflow";
 
 
 const TrendingSection = () => {
@@ -14,6 +15,7 @@ const TrendingSection = () => {
           <VideoCard videoId={texts.videos.nature} iframeTitle="physics-facts" title={texts.natureFact}/>
           <VideoCard videoId={texts.videos.pun} iframeTitle="pun-video-II" title={texts.punVideo}/>
           <MoreButton link="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg/videos"/>
+          <Overflow/>
         </div>
       </section>
   );
