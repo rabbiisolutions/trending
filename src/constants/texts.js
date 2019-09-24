@@ -19,7 +19,7 @@ const punVideo = dot + 'Pun Video II';
 const trending = 'Trending';
 const blogs = 'Blogs';
 const videos = {
-  maths: "obRan47jNT0", nature: "yqJcw9EjL6s", pun: "j5wR-DuqJXY", animals: "n6c1nXMTF9Q"
+  maths: "obRan47jNT0", nature: "igGge4mngis", pun: "j5wR-DuqJXY", animals: "n6c1nXMTF9Q"
 };
 const socialMedia = 'Social Media';
 const more = '...';
