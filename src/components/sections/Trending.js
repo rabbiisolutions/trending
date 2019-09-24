@@ -12,7 +12,7 @@ const TrendingSection = () => {
         <div className="videos-frame">
           <VideoCard videoId={texts.videos.animals} iframeTitle="animal-facts" title={texts.animalFact}/>
           <VideoCard videoId={texts.videos.maths} iframeTitle="maths-facts" title={texts.mathsFact}/>
-          <VideoCard videoId={texts.videos.nature} iframeTitle="physics-facts" title={texts.natureFact}/>
+          <VideoCard videoId={texts.videos.nature} iframeTitle="nature-facts" title={texts.natureFact}/>
           <VideoCard videoId={texts.videos.pun} iframeTitle="pun-video-II" title={texts.punVideo}/>
           <MoreButton link="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg/videos"/>
           <Overflow/>
