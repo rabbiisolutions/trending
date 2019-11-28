@@ -10,10 +10,9 @@ const TrendingSection = () => {
       <section className="trending">
         <div className="section-title">{texts.trending}</div>
         <div className="videos-frame">
-          <VideoCard videoId={texts.videos.animals} iframeTitle="animal-facts" title={texts.animalFact}/>
-          <VideoCard videoId={texts.videos.maths} iframeTitle="maths-facts" title={texts.mathsFact}/>
-          <VideoCard videoId={texts.videos.nature} iframeTitle="nature-facts" title={texts.natureFact}/>
-          <VideoCard videoId={texts.videos.pun} iframeTitle="pun-video-II" title={texts.punVideo}/>
+          <VideoCard videoId={texts.videos.teecha} iframeTitle="teecha-rabbii-ts" title={texts.teechaFact}/>
+          <VideoCard videoId={texts.videos.africa} iframeTitle="africa-facts" title={texts.africaFact}/>
+          <VideoCard videoId={texts.videos.anatomy} iframeTitle="anatomy-facts" title={texts.anatomyFact}/>
           <MoreButton link="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg/videos"/>
           <Overflow/>
         </div>

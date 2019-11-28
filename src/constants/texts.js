@@ -12,6 +12,10 @@ const hidden = 'hidden';
 const dot = '· ';
 const facts = ' Facts';
 const seven = '7+ ';
+const africaFact = dot + seven + 'Africa' + facts;
+const foodFact = dot + seven + 'Food' + facts;
+const anatomyFact = dot + seven + 'Anatomy' + facts;
+const teechaFact = 'TeeCha ' + dot + 'Rabbii TS ';
 const mathsFact = dot + seven + 'Maths' + facts;
 const animalFact = dot + seven + 'Animal' + facts;
 const natureFact = dot + seven + 'Nature' + facts;
@@ -29,7 +33,8 @@ const texts = {
   menuTitle: menuTitle, menuItems: menuItems, ourServices: ourServices, hidden: hidden, signUp: signUp,
   contacts: contacts, findUs: findUs, safaricom: safaricom, telkom: telkom, sema: sema, hr: hr,
   mathsFact: mathsFact, natureFact: natureFact, animalFact: animalFact, punVideo: punVideo, trending: trending,
-  blogs: blogs, videos: videos, socialMedia: socialMedia, more: more
+  blogs: blogs, videos: videos, socialMedia: socialMedia, more: more, africaFact: africaFact,
+  foodFact: foodFact, anatomyFact: anatomyFact, teechaFact: teechaFact
 };
 
 export default texts;
