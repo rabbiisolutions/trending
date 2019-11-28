@@ -19,6 +19,7 @@ const punVideo = dot + 'Pun Video II';
 const trending = 'Trending';
 const blogs = 'Blogs';
 const videos = {
+  maths: "obRan47jNT0", nature: "igGge4mngis", pun: "j5wR-DuqJXY", animals: "n6c1nXMTF9Q",
   africa: "SxXi9tOeO9k", food: "lCiEtKsh8Y8", anatomy: "oepEh2K7vrQ", teecha: "DSQo6BTI6Bg"
 };
 const socialMedia = 'Social Media';

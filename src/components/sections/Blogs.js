@@ -19,15 +19,15 @@ const BlogsSection = () => {
         <div className="images-frame">
           <ImageCard number={1} title={blogs.music.title} src={webpIsSupported() ? musicWebp : musicJpeg}
                      className="blog-image" alt="music-blog" content={blogs.music.text.substring(0, 160) + texts.more}
-                     url="https://rabbiits.wordpress.com/2019/08/25/lyrical-approach-as-a-way-of-learning/"
+                     url="https://rabbiits.wordpress.com/2019/10/23/get-the-best-out-of-home-tuition-for-cooking/"
           />
           <ImageCard number={2} title={blogs.language.title} src={webpIsSupported() ? languageWebp : languageJpeg}
                      className="blog-image" alt="language-blog" content={blogs.language.text.substring(0, 160) + texts.more}
-                     url="https://rabbiits.wordpress.com/2019/06/15/beauty-in-diversity/"
+                     url="https://rabbiits.wordpress.com/2019/07/26/plus-friends/"
           />
           <ImageCard number={3} title={blogs.art.title} src={webpIsSupported() ? artWebp : artJpeg}
                      className="blog-image" alt="art-blog" content={blogs.art.text.substring(0, 160) + texts.more}
-                     url="https://rabbiits.wordpress.com/2019/08/23/art-is-love-and-life-is-love/"
+                     url="https://rabbiits.wordpress.com/2019/10/02/04-3-areas-to-get-a-counsellor-mentor-for-your-child/"
           />
           <MoreButton link="https://rabbiits.wordpress.com/author/rabbiitech/"/>
           <Overflow/>
