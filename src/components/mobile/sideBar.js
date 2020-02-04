@@ -12,12 +12,6 @@ class SideBar extends React.Component {
     };
   }
 
-  servicesToggle(e) {
-    if (!this.state.servicesOpen) {
-      document.getElementsByClassName('services')[0].classList.toggle('hidden');
-    }
-  };
-
   menuHandler(e) {
     const target = e.target;
     if (this.state.active)
@@ -28,7 +22,6 @@ class SideBar extends React.Component {
       this.setState( {servicesOpen: !this.state.servicesOpen});
     else {
       this.setState( {servicesOpen: false});
-      this.servicesToggle(e);
     }
     menuToggle(target);
   }
@@ -47,24 +40,19 @@ class SideBar extends React.Component {
               <a className="menu-item"  href="https://www.rabbii.co.ke/">
                 {texts.menuItems[0]}
               </a>
-              <div className="menu-item" onClick={e => this.servicesToggle(e)}>
+              <a className="menu-item" href="https://payment.rabbii.co.ke/">
                 {texts.menuItems[1]}
-              </div>
-              <div className="services hidden">
-                <a className="menu-sub-item" href="https://www.rabbii.co.ke/#teecha">
-                  {texts.ourServices[0]}
-                </a>
-              </div>
-              <a className="menu-item" href="https://about.rabbii.co.ke/">
+              </a>
+              <a className="menu-item" href="https://tuition-jobs.rabbii.co.ke/">
                 {texts.menuItems[2]}
               </a>
-              <a className="menu-item" href="https://faqs.rabbii.co.ke/">
+              <a className="menu-item" href="https://about.rabbii.co.ke/">
                 {texts.menuItems[3]}
               </a>
-              <a className="menu-item" href="#contacts" onClick={e => this.menuHandler(e)}>
+              <a className="menu-item active" href="#" onClick={e => this.menuHandler(e)}>
                 {texts.menuItems[4]}
               </a>
-              <a className="menu-item active" href="#trending" onClick={e => this.menuHandler(e)}>
+              <a className="menu-item" href="https://faqs.rabbii.co.ke/">
                 {texts.menuItems[5]}
               </a>
             </div>
