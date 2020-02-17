@@ -7,6 +7,8 @@ const sema = 'sema@rabbii.co.ke';
 const hr = 'hr@rabbii.co.ke';
 const menuTitle = 'Menu';
 const menuItems = ['Home', 'Payment', 'Become a Tutor', 'About Us', 'Trending', 'FAQs'];
+const menuLinks = ['https://rabbii.co.ke', 'https://payment.rabbii.co.ke', 'https://tutor.rabbii.co.ke',
+  'https://about.rabbii.co.ke', 'https://faqs.rabbii.co.ke'];
 const ourServices = ['TeeCha'];
 const hidden = 'hidden';
 const dot = '· ';
@@ -34,7 +36,7 @@ const texts = {
   contacts: contacts, findUs: findUs, safaricom: safaricom, telkom: telkom, sema: sema, hr: hr,
   mathsFact: mathsFact, natureFact: natureFact, animalFact: animalFact, punVideo: punVideo, trending: trending,
   blogs: blogs, videos: videos, socialMedia: socialMedia, more: more, africaFact: africaFact,
-  foodFact: foodFact, anatomyFact: anatomyFact, teechaFact: teechaFact
+  foodFact: foodFact, anatomyFact: anatomyFact, teechaFact: teechaFact, menuLinks: menuLinks
 };
 
 export default texts;
