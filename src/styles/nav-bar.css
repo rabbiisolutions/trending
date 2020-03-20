@@ -1,0 +1,132 @@
+#nav-bar {
+  background-color: #FAFAFA;
+  height: 3.5em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(27, 37, 49, 0.25);
+}
+@media (min-width: 800px) {
+  #nav-bar {
+    align-items: unset;
+  }
+}
+#nav-bar .logo {
+  display: inline-block;
+  max-width: 90px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+#nav-bar .logo span svg:hover {
+  transform: scale(1.1);
+}
+#nav-bar .toggle span {
+  fill: #1B2531;
+  cursor: pointer;
+}
+#nav-bar .nav {
+  display: none;
+  font-weight: 300;
+}
+#nav-bar .nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0;
+  min-width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1B2531;
+  margin: 0 0.4375vw;
+  height: available;
+}
+#nav-bar .nav .nav-item .text {
+  margin: 5px 0.625vw 0;
+}
+#nav-bar .nav .nav-item .active {
+  background-color: #27A1DA;
+  height: 5px;
+  margin-top: 9px;
+}
+#nav-bar .nav .nav-item:hover {
+  font-weight: bold;
+  color: #0B4B68;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 800px) {
+  #nav-bar .nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #nav-bar .nav-item.active {
+    color: #0B4B68;
+    font-weight: bold;
+  }
+  #nav-bar .nav-item.active:hover {
+    text-shadow: none;
+  }
+}
+@media (min-width: 800px) {
+  #nav-bar .toggle {
+    display: none;
+  }
+}
+#nav-bar .toggle {
+  display: flex;
+  justify-content: flex-end;
+  width: 6vh;
+  line-height: 15px;
+  padding: 0 8px 0 0;
+}
+@media (min-width: 800px) {
+  #nav-bar .toggle {
+    display: none;
+  }
+}
+#nav-bar .right {
+  width: 50px;
+  padding: 0 3vw;
+}
+#nav-bar .toggle span svg {
+  cursor: pointer;
+}
+#nav-bar .toggle span svg:hover {
+  transform: scale(1.1);
+}
+#nav-bar .pulse {
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+#nav-bar button {
+  padding: 0.4em 1.5em;
+  font-size: 1em;
+}
+@media (min-width: 800px) {
+  #nav-bar button {
+    padding: 0.5em 1.5em;
+  }
+}
+
+/*# sourceMappingURL=nav-bar.css.map */

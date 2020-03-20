@@ -1,0 +1,191 @@
+.sign-up-modal {
+  background-color: white;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sign-up-modal {
+    top: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .sign-up-modal {
+    top: 50%;
+  }
+}
+
+.sign-up-modal #sign-up-text {
+  font-weight: bold;
+  margin: 1vw 0 2vw;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .sign-up-modal #sign-up-text {
+    margin: 1vw 0;
+    font-size: 1.5rem;
+  }
+}
+
+.sign-up-modal .footer, .sign-up-modal .header {
+  background-color: #FAFAFA;
+}
+
+.sign-up-modal .header {
+  border-radius: 5px 5px 0 0;
+}
+
+.sign-up-modal .footer {
+  border-radius: 0 0 5px 5px;
+}
+
+.sign-up-modal .close-icon {
+  right: 10px;
+  top: 5px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.sign-up-modal {
+  width: 90%;
+  border-radius: 5px;
+  max-height: calc(100% - 100px);
+}
+.sign-up-modal .btn-link {
+  -webkit-border-radius: 10em;
+  border-radius: 10em;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.25vw;
+  display: inline-block;
+  border-style: solid;
+  text-align: center;
+  box-shadow: none;
+}
+.sign-up-modal .btn-link:hover {
+  transform: none;
+}
+.sign-up-modal .client-btn, .sign-up-modal .tutor-btn {
+  padding: 0.7rem 1.2rem;
+  margin: 3vw 4vw 1.25vw;
+  border-width: 1px;
+  font-size: 0.9em;
+}
+@media (min-width: 768px) {
+  .sign-up-modal .client-btn, .sign-up-modal .tutor-btn {
+    margin: 0.5vw 2vw 1.25vw;
+  }
+}
+.sign-up-modal .tutor-btn {
+  margin: 3vw 4vw 1.25vw;
+}
+@media (min-width: 768px) {
+  .sign-up-modal .tutor-btn {
+    margin: 0.5vw 2vw 1.25vw;
+  }
+}
+@media (min-width: 450px) {
+  .sign-up-modal {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .sign-up-modal {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .sign-up-modal {
+    width: 40%;
+  }
+}
+@media (min-width: 1330px) {
+  .sign-up-modal {
+    width: 30%;
+  }
+}
+.sign-up-modal .header {
+  padding: 2vh;
+}
+.sign-up-modal .footer {
+  padding: 2vh;
+}
+.sign-up-modal .user-title {
+  font-size: 0.9em;
+  margin: 2vw 0 3vw 3vh;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: left;
+  color: rgba(27, 37, 49, 0.74);
+}
+@media (min-width: 768px) {
+  .sign-up-modal .user-title {
+    font-size: 1.0125em;
+    margin: 0 0 2vw 7vw;
+  }
+}
+@media (min-width: 1024px) {
+  .sign-up-modal .user-title {
+    margin-left: 5vw;
+    margin-bottom: 1.5vw;
+  }
+}
+.sign-up-modal .content {
+  padding: 2vh 1vh 4vh;
+}
+@media (min-width: 768px) {
+  .sign-up-modal .content {
+    padding: 2vh 0;
+  }
+}
+@media (min-width: 1024px) {
+  .sign-up-modal .content {
+    padding: 4vh 0;
+  }
+}
+.sign-up-modal .content:nth-child(1) {
+  border-bottom: 1px solid #eeeeee;
+}
+.sign-up-modal .btn-link, .sign-up-modal button {
+  border-color: #0071A5;
+  color: #0071A5;
+  background-color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1rem !important;
+}
+.sign-up-modal .btn-link:hover, .sign-up-modal button:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0071A5;
+  transition: all 0.5s ease-in-out;
+}
+.sign-up-modal button {
+  transition: none !important;
+  transform: none !important;
+}
+.sign-up-modal #client-btns, .sign-up-modal #tutor-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .sign-up-modal #client-btns, .sign-up-modal #tutor-btns {
+    margin-left: 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .sign-up-modal #client-btns, .sign-up-modal #tutor-btns {
+    margin-left: 3vw;
+  }
+}
+
+.info {
+  font-weight: 300;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=signup-modal.css.map */

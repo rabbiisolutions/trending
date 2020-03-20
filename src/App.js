@@ -1,32 +1,30 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import TrendingView from "./components/TrendingView";
-import backDropHandler from "./events/backDrop";
-import SideBar from "./components/mobile/sideBar";
-import NavBar from "./components/mobile/navBar";
-import MobileFooter from "./components/mobile/footer";
-import SignUpModal from "./components/signUpModal";
-import texts from "./constants/texts";
-import SocialIcons from "./components/sub-items/SocialIcons";
-import SocialButtons from "./components/sub-items/SocialButtons";
+import { CookiesProvider } from 'react-cookie';
+import backDropHandler from "./events/backdrop";
+import SideBar from "./components/SideBar";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import SignUpModal from "./components/SignUpModal";
+import SocialIcons from "./components/SocialIcons";
+import SocialButtons from "./components/SocialButtons";
+import TrendingSection from "./components/Trending";
+import BlogsSection from "./components/Blogs";
 
 function App() {
   return (
-      <Router>
+      <CookiesProvider>
         <NavBar/>
         <SocialIcons/>
         <SocialButtons/>
-        <TrendingView/>
+        <main className={'jpeg'} id={'main'}>
+          <TrendingSection/>
+          <BlogsSection/>
+        </main>
         <SideBar/>
         <SignUpModal/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
-        <div className="our-services hidden">
-          <a className="nav-sub-item" href="https://www.rabbii.co.ke/#teecha">
-            {texts.ourServices[0]}
-          </a>
-        </div>
-        <MobileFooter/>
-      </Router>
+        <Footer/>
+      </CookiesProvider>
   );
 }
 
