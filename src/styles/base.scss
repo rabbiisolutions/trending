@@ -27,7 +27,7 @@ $navBarHeight: 3.5em;
 $webkitRadius : 10em;
 $borderRadius: 10em;
 $font24: 1em;
-$desktop: 800px;
+$desktop: 768px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
@@ -43,6 +43,14 @@ $monitor: 1024px;
     }
 }
 
+$screen: 1440px;
+
+@mixin screen {
+    @media (min-width: #{$screen}) {
+        @content;
+    }
+}
+
 html {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
@@ -51,7 +59,7 @@ html {
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Nunito", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", sans-serif;
     width: 100%;
     color: color(mirage);
 }
@@ -239,7 +247,7 @@ main {
 
 .section-title {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 5.5vw;
     color: color(black);
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 1.5rem;
@@ -249,7 +257,7 @@ main {
     }
 
     @include desktop {
-        font-size: 36px;
+        font-size: 1.75em;
     }
 }
 
@@ -317,5 +325,40 @@ main {
 
     @include monitor {
         height: 590px;
+    }
+}
+
+#zoom-slide {
+    width: fit-content;
+    margin: 0 auto 4em;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: #1E1C2C;
+
+    @include desktop {
+        padding: 1vw;
+    }
+
+    .section-title {
+        color: #FFFFFF;
+        margin-bottom: .5em;
+    }
+
+    #presentation {
+        width: 90vw;
+        height: 60vw;
+
+        @include desktop {
+            width: 65vw;
+            height: 40vw;
+        }
+        @include monitor {
+            width: 67vw;
+            height: 40vw;
+        }
+        @include screen {
+            width: 62vw;
+            height: 37vw;
+        }
     }
 }
