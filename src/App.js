@@ -9,6 +9,7 @@ import SocialIcons from "./components/SocialIcons";
 import SocialButtons from "./components/SocialButtons";
 import TrendingSection from "./components/Trending";
 import BlogsSection from "./components/Blogs";
+import Landing from "./components/Landing";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <SocialIcons/>
         <SocialButtons/>
         <main className={'jpeg'} id={'main'}>
+          <Landing/>
           <TrendingSection/>
           <BlogsSection/>
         </main>
